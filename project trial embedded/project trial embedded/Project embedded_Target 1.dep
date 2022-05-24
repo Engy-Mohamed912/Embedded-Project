@@ -1,0 +1,29 @@
+Dependencies for Project 'Project embedded', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_TM4C123.s)(0x532C4792)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\startup_tm4c123.lst --xref -o .\startup_tm4c123.o --depend .\startup_tm4c123.d)
+F (.\embedded main.c)(0x627FC2A6)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o ".\embedded main.o" --omf_browse ".\embedded main.crf" --depend ".\embedded main.d")
+I (GPIO.h)(0x627FA667)
+I (Macro.h)(0x627F9A8F)
+I (tm4c123gh6pm.h)(0x627D15C9)
+I (Button.h)(0x627F9800)
+I (led.h)(0x627F9A8F)
+I (LCD.h)(0x627FAAAF)
+F (.\GPIO.c)(0x627FA667)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\gpio.o --omf_browse .\gpio.crf --depend .\gpio.d)
+I (GPIO.h)(0x627FA667)
+I (Macro.h)(0x627F9A8F)
+I (tm4c123gh6pm.h)(0x627D15C9)
+F (.\tm4c123gh6pm.h)(0x627D15C9)()
+F (.\led.c)(0x627F9331)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+I (GPIO.h)(0x627FA667)
+I (Macro.h)(0x627F9A8F)
+I (led.h)(0x627F9A8F)
+F (.\Button.c)(0x627F9376)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\button.o --omf_browse .\button.crf --depend .\button.d)
+I (GPIO.h)(0x627FA667)
+I (macro.h)(0x627F9A8F)
+F (.\KeyPad.c)(0x627FA667)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\keypad.o --omf_browse .\keypad.crf --depend .\keypad.d)
+I (GPIO.h)(0x627FA667)
+I (Button.h)(0x627F9800)
+I (tm4c123gh6pm.h)(0x627D15C9)
+I (keyPad.h)(0x627F95F3)
+F (.\LCD.c)(0x627FB1C7)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\lcd.o --omf_browse .\lcd.crf --depend .\lcd.d)
+I (GPIO.h)(0x627FA667)
+I (LCD.h)(0x627FAAAF)
