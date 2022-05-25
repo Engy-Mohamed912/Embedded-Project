@@ -1,0 +1,64 @@
+if (Choice == 'A'){
+					
+//			  while (SW3_input()!=0){
+//				while(SW1_input()!=0){
+//					
+					unsigned char popcorn[] = "POPCORN";
+					int Cookingtime = 60;
+					int i;
+						
+					LCD_Cmd(0x01);
+					LCD_WriteString (popcorn);
+					delay_milli(2000);
+					LCD_Cmd(0x01);
+		      for(i = 60;i>=1;i--){
+						CONTINUEA:
+						if(SW3_input()!=0&&(SW1_input()!=0){
+					GPIO_PORTF_DATA_R|=0X0E;//leds on
+					Countdown_Integertocharacter(i);
+			    delay_milli(1000);
+			    LCD_Cmd(0x01);
+					}
+						else goto HOLDA;
+					}
+					STOPA:
+		             BUZZER();//buzzer on
+				         for(int j=0;j<6;j++)
+				         {
+				           GPIO_PORTF_DATA_R^(0X0E);//leds toggle 3 times
+	            	   delay_milli(1000);
+				         }
+								 GPIO_PORTF_DATA_R&=~0X0E;//leds off
+								 
+								 
+								 
+								 
+								 HOLDA:
+								 if(SW3_input()==0)//door is open or pause switch is on 
+			{
+				while(SW3_input()==0){
+		    LCD_WriteString(i+ '0');    //pausecooking
+				GPIO_PORTF_DATA_R^(0X0E);//leds toggle 
+	     	delay_milli(1000);
+		  }
+				goto CONTINUEA;
+			}
+			else if(SW1_input()==0)//pause
+			{
+				PAUSEA:
+						LCD_WriteString(i+ '0');    //pausecooking
+				    GPIO_PORTF_DATA_R^(0X0E);//leds toggle 
+	        	delay_milli(1000);
+			      if(SW1_input()==0)//stop cooking
+			          {
+									goto STOPA;
+			           }
+							else if(SW2_input()==0)//continue cooking
+							{
+                while(SW3_input()==0);//wait the door to close
+								goto CONTINUEA;
+							}
+							else goto PAUSEA;
+						}
+					
+		}
