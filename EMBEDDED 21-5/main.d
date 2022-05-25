@@ -1,0 +1,15 @@
+.\main.o: Main.c
+.\main.o: Macros.h
+.\main.o: tm4c123gh6pm.h
+.\main.o: GPIO.h
+.\main.o: Switches.h
+.\main.o: LCD.h
+.\main.o: Counter.h
+.\main.o: Keypad.h
+.\main.o: Systick.h
+.\main.o: LED.h
+.\main.o: States.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
